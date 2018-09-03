@@ -1,0 +1,76 @@
+@media screen and (min-width: 1220px) {
+  body {
+    background-image:url('../img/backgroundimage.jpg');
+    background-size:     cover;  
+    background-attachment: fixed;                   
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    font-family: 'Open Sans', sans-serif,"微軟正黑體";
+    -webkit-background-size: cover ;
+    -moz-background-size: cover ;
+    -o-background-size: cover ;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  body {
+    /* background-image:url('../img/backgroundimage.jpg');
+    background-size:     cover;  
+    background-attachment: fixed;                   
+    background-repeat:   no-repeat;
+    background-position: center center;  */
+    font-family: 'Open Sans', sans-serif,"微軟正黑體";
+    /* -webkit-background-size: cover ;
+    -moz-background-size: cover ;
+    -o-background-size: cover ; */
+    background-color:rgb(224, 224, 235)
+  }
+}
+
+.search{
+  text-align: center;
+  margin: 30px 10px;
+  padding-bottom: 30px;
+  /* padding: 10px ; */
+  background-color:rgb(237, 237, 237);
+}
+
+.textfield{
+  padding: 0px 40px 0px 40px ;
+  text-align: center ;
+}
+
+.choice{
+  text-align: center ;
+  margin-top: 50px ;
+}
+
+.searchtable{
+  width: 100% ;
+}
+
+.iTraffic-screen {
+  margin: 70px auto 0 auto;
+}
+
+.alertDialog { padding-top: 0 !important; }
+
+@media screen and (min-width: 1220px) {
+  .iTraffic-screen {
+    padding-left: 256px;
+  }
+}
+
+.leftavatar{
+  color: rgb(255, 255, 255);
+    background-color: rgb(188, 188, 188);
+    user-select: none;
+    justify-content: center;
+    /* font-size: 20px; */
+    /* border-radius: 50%; */
+    height: 40px;
+    /* width: 40px; */
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}

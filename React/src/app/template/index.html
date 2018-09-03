@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="" prefix='og: http://ogp.me/ns#'>
+
+  <head>
+    <% for (var css in htmlWebpackPlugin.files.css) { %><link rel="preload" href="<%=htmlWebpackPlugin.files.css[css] %>" as="style"><% } %>
+    <% for (var js in htmlWebpackPlugin.files.js) { %><link rel="preload" href="<%=htmlWebpackPlugin.files.js[js] %>" as="script"><% } %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title><%=htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <script src="//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <link rel="shortcut icon" href="/img/icon.ico" type="image/ico">
+    <link rel="icon" href="/img/icon.ico" type="image/ico">
+    <link rel="dns-prefetch" href="//i.ytimg.com">
+    <link rel="dns-prefetch" href="//yt3.ggpht.com">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <div id="fb-root"></div>
+  </body>
+
+</html>

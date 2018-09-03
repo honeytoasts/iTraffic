@@ -1,0 +1,266 @@
+/* body{ 
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 100px;
+    background-image: url("/images/TimetableSearchBackground.jpg"); 
+    background-color: rgba(0, 0, 0, 0.158);;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+} */
+/* img {
+    mix-blend-mode: multiply;
+} */
+@media screen and (max-width:480px){
+    width:100%;
+    /* margin:auto; */
+}
+p{
+    color:rgb(100, 94, 96);
+    font-size:5vmin;
+}
+#h1{
+    font-size:8vmin;
+    margin:5vh auto auto auto;
+    color:white;
+}
+/* #choice{
+    margin:5vh auto auto auto;
+    text-align:center;
+    font-size:30px;
+} */
+.type{
+    width: 200px;
+    background-color: #324677bb;
+    /* color: white; */
+    padding: 14px 20px;
+    margin: 20px 50px;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size:3vmin;
+}
+button[type=button].type:hover{
+    background-color: #324677;
+}
+#searchform{
+    text-align:center;
+}
+#searchform td:nth-child(1){
+    text-align:left;
+}
+#searchform tr:nth-child(2) td:nth-child(2){
+    text-align:right;
+}
+#searchform tr:nth-child(2) td:nth-child(4){
+    text-align:left;
+}
+input[type=text],[type=date],select {
+    font-size:2.5vmin;
+    width: 32vmin;
+    padding: 8px 8px;
+    margin: 8px 8px 8px 8px;
+    display: inline-block;
+    background:none;
+    border:none;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    border-radius:0;
+}
+input[type=text]:focus {
+    outline:none;
+}
+button[type=button]:focus {
+    outline:none;
+}
+button[type=button].search {
+    width: 200px;
+    background-color: #324677bb;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 50px;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size:3vmin;
+}
+button[type=button].search:hover{
+    background-color: #324677;
+
+}
+#searchtable{
+    display:none;
+    background-color:rgba(223, 221, 221,0.5);
+}
+
+.change1{
+    padding: 1.8vmin 2vmin;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(137, 208, 236, 0.65);
+    text-align: center;
+}
+.change2{
+    padding: 1.8vmin 2vmin;
+    margin:5px 5px;
+    border:none;
+    border-radius: 50%;
+    background-color:rgba(255, 192, 203, 0.65);
+    text-align:center;
+}
+.change3{
+    padding: 1.8vmin 2vmin;
+    margin:5px 5px;
+    border:none;
+    border-radius: 50%;
+    background-color:rgba(144, 238, 144, 0.65);
+    text-align:center;
+}
+.change1:hover{background-color:rgb(118, 179, 202);  cursor:pointer;}
+.change2:hover{background-color:rgb(230, 174, 183);  cursor:pointer;}
+.change3:hover{background-color:rgb(125, 202, 125);  cursor:pointer;}
+
+button>img{
+    width:3.6vmin;
+}
+#clear1{
+	width: 15px;
+	height: 15px;
+	/* position: absolute; */
+	background-color: rgb(187, 187, 187);
+	z-index:1;
+	right: 7px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 5px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+    font-weight: normal;
+    font-size:0.5em;
+	box-shadow: 0 0 2px rgb(110, 110, 110);
+    cursor: pointer;
+    /* line-height: 15px; */
+}
+/* 台高鐵時刻表搜尋結果 */
+.result{
+    overflow-x:auto;
+    margin:20px 10vw;
+}
+#info{
+    background-color:#aea69f40;
+}
+#showTable th:nth-child(3):hover{background-color:rgb(155, 155, 155);cursor:pointer;}
+#showTable th:nth-child(4):hover{background-color:rgb(155, 155, 155);cursor:pointer;}
+#showTable th:nth-child(5):hover{background-color:rgb(155, 155, 155);cursor:pointer;}
+#showTable th:nth-child(6):hover{background-color:rgb(155, 155, 155);cursor:pointer;}
+#showTable td:nth-child(1) {width: 20%; color: rgb(43, 43, 43);}
+#showTable td:nth-child(2) {width: 10%; color: gray}
+#showTable td:nth-child(3) {width: 18%; color: dodgerblue;}
+#showTable td:nth-child(4) {width: 18%; color: dodgerblue;}
+#showTable td:nth-child(5) {width: 20%; color: #309e4e;}
+#showTable td:nth-child(6) {width: 13%; color: rgb(221, 144, 0);}
+#showTable th{
+    background-color:rgb(223, 221, 221);
+}
+#showTable tr:nth-child(even){
+    background-color:rgb(197, 195, 195);
+}
+#showTable {
+    border-collapse: collapse;
+    margin:auto;
+    width:100%;
+    display:none;
+    background-color:rgba(223, 221, 221,0.5);
+}
+.row:hover{
+    background-color:rgb(158, 158, 158)!important;
+}
+
+#detailtable td {text-align: center;}
+#detailtable th {
+    background-color:#A4978E;
+    text-align:center;
+    font-size:14px;
+    font-weight:200;
+    line-height:18px;
+} 
+#detailtable td:nth-child(1) {width: 4%; }
+#detailtable td:nth-child(2) {width: 42%; }
+#detailtable td:nth-child(3) {width: 18%; }
+#detailtable td:nth-child(4) {width: 18%; }
+#detailtable td:nth-child(5) {width: 18%; }
+
+td>button{
+    border:none;
+    background-color:none;
+}
+#detail {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    text-align:center;
+}
+#detail > div{
+    max-width:500px;
+    height: 400px;
+    position:relative;
+    margin:0 auto 100px auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#detailtable {
+    display: none; 
+    width: 100%;
+    border-collapse: collapse;
+    text-align:center;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    /* font-size:12px; */
+    position: absolute;
+    /* position:relative; */
+    top:0;
+    left:0;
+    padding-bottom: 5px;
+}
+#detailtable th, #detailtable td {
+    padding: 5px 10px;
+}
+#result2{font-size:14px;}
+
+.close {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    z-index: 1;
+    color: #aaaaaa;
+    /* float:right; */
+    font-size: 28px;
+    font-weight: bold;
+    /* position: fixed;
+    top: 90px;
+    right: 105px; */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#info2{padding: 5px 0;}
+
+.depart{background-color:rgb(223, 225, 226);}
+.arrive{background-color:pink;}
